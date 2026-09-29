@@ -1,19 +1,103 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fusion Art of Dance - Jamshedpur</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #121212; color: white; text-align: center; }
-        .card { background: #1e1e1e; max-width: 400px; margin: auto; padding: 25px; border-radius: 12px; }
-        h2 { color: #ff4757; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f0f11; color: #fff; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: #16161a; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .logo { font-size: 24px; font-weight: bold; color: #ff4757; }
+        .logo span { color: #fff; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #ff4757; }
+        
+        /* Hero Section */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1200') center/cover; padding: 0 20px; }
+        .hero h1 { font-size: 48px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
+        .hero p { font-size: 20px; color: #ddd; max-width: 600px; margin-bottom: 25px; }
+        .btn { padding: 12px 30px; background: #ff4757; color: #fff; border: none; border-radius: 25px; font-size: 16px; font-weight: bold; cursor: pointer; text-decoration: none; transition: 0.3s; }
+        .btn:hover { background: #e03e4d; transform: scale(1.05); }
+
+        /* Dance Styles */
+        .services { padding: 60px 8%; text-align: center; }
+        .section-title { font-size: 32px; margin-bottom: 40px; color: #ff4757; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card { background: #18181c; padding: 25px; border-radius: 12px; border: 1px solid #2a2a30; transition: 0.3s; }
+        .card:hover { transform: translateY(-8px); border-color: #ff4757; }
+        .card h3 { margin-bottom: 15px; color: #fff; }
+        .card p { color: #aaa; font-size: 14px; }
+
+        /* Contact Section */
+        .contact { padding: 60px 8%; background: #16161a; text-align: center; }
+        .contact-info { margin-top: 20px; font-size: 18px; color: #ccc; }
+        .contact-info p { margin: 10px 0; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #0b0b0d; color: #666; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h2>The Fusion Art of Dance</h2>
-        <p>Jamshedpur's Premier Dance Academy</p>
-    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Fusion<span>Art</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#styles">Styles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>The Fusion Art of Dance</h1>
+        <p>Express yourself through movement. Jamshedpur's premier studio for Hip-Hop, Contemporary, Bollywood & Classical dance.</p>
+        <a href="#contact" class="btn">Join Our Classes</a>
+    </section>
+
+    <!-- Dance Styles -->
+    <section class="services" id="styles">
+        <h2 class="section-title">Dance Styles We Offer</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Hip-Hop & Urban</h3>
+                <p>Master street styles, pops, locks, and modern urban choreography with energetic beats.</p>
+            </div>
+            <div class="card">
+                <h3>Contemporary</h3>
+                <p>Blend ballet and modern dance technique to express emotions through fluid storytelling movements.</p>
+            </div>
+            <div class="card">
+                <h3>Bollywood Fusion</h3>
+                <p>High-energy Indian commercial fusion choreography perfect for fitness, fun, and stage shows.</p>
+            </div>
+            <div class="card">
+                <h3>Classical & Folk</h3>
+                <p>Build strong fundamentals in traditional dance forms under expert guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Visit Our Studio</h2>
+        <p>Ready to start dancing? Get in touch or visit us in Jamshedpur!</p>
+        <div class="contact-info">
+            <p>📍 <strong>Location:</strong> Jamshedpur, Jharkhand</p>
+            <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+            <p>✉️ <strong>Email:</strong> info@fusionartdance.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 The Fusion Art of Dance. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
