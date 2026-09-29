@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fusion Art of Dance - Jamshedpur</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: white; text-align: center; margin: 0; padding: 20px; }
+        .card { background: #1e1e1e; max-width: 400px; margin: auto; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(255,255,255,0.1); }
+        h2 { color: #ff4757; }
+        input, select { width: 90%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; font-size: 15px; }
+        button { background: #25D366; color: white; padding: 12px; border: none; width: 95%; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        button:hover { background: #128C7E; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🕺 The Fusion Art of Dance</h2>
+        <p>Jamshedpur | Home Tuition & Online Classes</p>
+        <form action="/book" method="POST">
+            <input type="text" name="name" placeholder="Aapka Naam (Your Name)" required><br>
+            <input type="tel" name="phone" placeholder="WhatsApp Number" required><br>
+            <select name="class_type">
+                <option value="Home Tuition">Home Tuition (Jamshedpur)</option>
+                <option value="Online Class">Online Class</option>
+            </select><br>
+            <select name="dance_style">
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Bollywood">Bollywood</option>
+                <option value="Freestyle">Freestyle</option>
+                <option value="Contemporary">Contemporary</option>
+            </select><br>
+            <input type="text" name="address" placeholder="Aapka Area / Address"><br>
+            <button type="submit">WhatsApp Par Book Karein 🚀</button>
+        </form>
+    </div>
+</body>
+</html>
